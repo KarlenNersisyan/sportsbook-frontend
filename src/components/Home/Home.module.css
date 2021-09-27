@@ -1,0 +1,231 @@
+.backgroundWebsite {
+  background-image: url("../../assets/images/1-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: black;
+  color: white;
+  padding-left: 45px;
+}
+
+span {
+  padding-left: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+span:hover {
+  color: green;
+  transform: scale(1.09);
+}
+
+.titleImage {
+  position: relative;
+}
+
+.backImage {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.infoImage {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+}
+
+.more {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  width: 130px;
+  height: 40px;
+  background: red;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  line-height: 40px;
+}
+
+.more:hover {
+  background: green;
+}
+
+.more1 {
+  position: absolute;
+  top: 190px;
+  left: 5%;
+  width: 130px;
+  height: 40px;
+  background: red;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  line-height: 40px;
+}
+
+.more1:hover {
+  background: green;
+}
+
+.more2 {
+  position: absolute;
+  top: 188px;
+  right: 63%;
+  width: 130px;
+  height: 40px;
+  background: red;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  line-height: 40px;
+}
+
+.more2:hover {
+  background: green;
+}
+
+.imageWrapper {
+  height: 300px;
+  padding: 15px 205px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.part1 {
+  position: relative;
+}
+
+.back1 {
+  height: 300px;
+  object-fit: cover;
+}
+
+.infoBack1 {
+  position: absolute;
+  top: 23px;
+  left: 5%;
+}
+
+.part2 {
+  position: relative;
+}
+
+.back2 {
+  height: 300px;
+  object-fit: cover;
+}
+
+.infoBack2 {
+  position: absolute;
+  top: 25px;
+  right: 28%;
+}
+
+.elementsContainer {
+  display: flex;
+  height: 50px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.featured {
+  width: 200px;
+  padding-left: 204px;
+}
+
+.longline {
+  padding-left: 204px;
+  width: 800px;
+}
+
+.general {
+  display: flex;
+  padding: 0px 203px;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.listShoes {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.infoShoes {
+  width: 30%;
+  border: 1px solid red;
+}
+
+.product1 {
+  display: flex;
+  height: 220px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.product2 {
+  display: flex;
+  margin-top: 37px;
+  height: 187px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.product3 {
+  display: flex;
+  height: 205px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.newStyle {
+  width: 50px;
+  padding-left: 100px;
+}
+
+.saleStyle {
+  width: 60px;
+  padding-left: 100px;
+}
+
+.shoes1 {
+  width: 130px;
+}
+
+.simple {
+  width: 100px;
+}
+
+.sum1 {
+  width: 40px;
+}
+
+.shortLine {
+  width: 125px;
+}
