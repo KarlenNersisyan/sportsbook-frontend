@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// Import Images Start
 import { getProducts } from "../../services/service";
 import backImage from "../../assets/images/1-89.png";
 import infoImage from "../../assets/images/1-90.png";
@@ -18,6 +19,16 @@ import shoes2 from "../../assets/images/1-39.png";
 import shoes3 from "../../assets/images/1-45.png";
 import simple from "../../assets/images/1-31.png";
 import sum1 from "../../assets/images/1-32.png";
+import categoriesImage from "../../assets/images/1-17.png";
+import womenImage from "../../assets/images/1-19.png";
+import best from "../../assets/images/1-3.png";
+import shoesSmall from "../../assets/images/1-13.png";
+import titleSimple from "../../assets/images/1-6.png";
+import sum120small from "../../assets/images/1-7.png";
+import sum120 from "../../assets/images/1-8.png";
+import tag from "../../assets/images/1-25.png";
+import tags from "../../assets/images/1-24.png";
+// Import Images End
 
 import classes from "./Home.module.css";
 
@@ -74,41 +85,232 @@ function Home() {
       </div>
       <div className={classes.general}>
         <div className={classes.listShoes}>
-          <div className={classes.product1}>
-            <img src={newStyle} alt="newStyle" className={classes.newStyle} />
-            <img src={shoes1} alt="shoes1" className={classes.shoes1} />
-            <img
-              src={shortLine}
-              alt="shortLine"
-              className={classes.shortLine}
-            />
-            <img src={simple} alt="simple" className={classes.simple} />
-            <img src={sum1} alt="sum1" className={classes.sum1} />
+          <div className={classes.categories1}>
+            <div className={classes.product1}>
+              <img src={newStyle} alt="newStyle" className={classes.newStyle} />
+              <img src={shoes1} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
+            <div className={classes.product2}>
+              <img src={shoes2} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
+            <div className={classes.product3}>
+              {" "}
+              <img
+                src={saleStyle}
+                alt="newStyle"
+                className={classes.saleStyle}
+              />
+              <img src={shoes3} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
           </div>
-          <div className={classes.product2}>
-            <img src={shoes2} alt="shoes1" className={classes.shoes1} />
-            <img
-              src={shortLine}
-              alt="shortLine"
-              className={classes.shortLine}
-            />
-            <img src={simple} alt="simple" className={classes.simple} />
-            <img src={sum1} alt="sum1" className={classes.sum1} />
+          <div className={classes.elementsContainer}>
+            <img src={latest} alt="featured" className={classes.latest} />
+            <img src={longline} alt="longline" className={classes.longline1} />
           </div>
-          <div className={classes.product3}>
-            {" "}
-            <img src={saleStyle} alt="newStyle" className={classes.saleStyle} />
-            <img src={shoes3} alt="shoes1" className={classes.shoes1} />
-            <img
-              src={shortLine}
-              alt="shortLine"
-              className={classes.shortLine}
-            />
-            <img src={simple} alt="simple" className={classes.simple} />
-            <img src={sum1} alt="sum1" className={classes.sum1} />
+          <div className={classes.categories1}>
+            <div className={classes.product1}>
+              <img src={newStyle} alt="newStyle" className={classes.newStyle} />
+              <img src={shoes1} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
+            <div className={classes.product2}>
+              <img src={shoes2} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
+            <div className={classes.product3}>
+              {" "}
+              <img
+                src={saleStyle}
+                alt="newStyle"
+                className={classes.saleStyle}
+              />
+              <img src={shoes3} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
+          </div>
+          <div className={classes.categories1}>
+            <div className={classes.product1}>
+              <img src={newStyle} alt="newStyle" className={classes.newStyle} />
+              <img src={shoes1} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
+            <div className={classes.product2}>
+              <img src={shoes2} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
+            <div className={classes.product3}>
+              {" "}
+              <img
+                src={saleStyle}
+                alt="newStyle"
+                className={classes.saleStyle}
+              />
+              <img src={shoes3} alt="shoes1" className={classes.shoes1} />
+              <img
+                src={shortLine}
+                alt="shortLine"
+                className={classes.shortLine}
+              />
+              <img src={simple} alt="simple" className={classes.simple} />
+              <img src={sum1} alt="sum1" className={classes.sum1} />
+            </div>
           </div>
         </div>
-        <div className={classes.infoShoes}></div>
+        <div className={classes.infoShoes}>
+          <div className={classes.elem1}>
+            <div className={classes.partElem1}>
+              <img
+                src={categoriesImage}
+                alt="categories"
+                className={classes.categories}
+              />
+            </div>
+            <hr />
+            <div className={classes.partElem2}>
+              <img src={womenImage} alt="womenImage" />
+              <div className={classes.banner}>
+                <img
+                  src={shortLine}
+                  alt="shortline"
+                  className={classes.banner}
+                />
+                <button className={classes.plus}> + </button>
+                <img
+                  src={shortLine}
+                  alt="shortline"
+                  className={classes.banner}
+                />
+                <button className={classes.minus}> - </button>
+              </div>
+            </div>
+          </div>
+          <div className={classes.elem2}>
+            <div className={classes.elemPart1}>
+              <img src={best} alt="categories" className={classes.categories} />
+            </div>
+            <hr />
+            <div className={classes.elemPart2}>
+              <div>
+                <img
+                  src={shoesSmall}
+                  alt="shoesSmall"
+                  className={classes.shoesSmall}
+                />
+              </div>
+              <div className={classes.shoesInfoContainer}>
+                <div className={classes.shInCont1}>
+                  <img src={titleSimple} alt="titleSimple" />
+                </div>
+                <div className={classes.shInCont2}>
+                  <img src={sum120small} alt="sum120small" />
+                </div>
+                <div className={classes.shInCont3}>
+                  <img src={sum120} alt="sum120" />
+                </div>
+              </div>
+            </div>
+            <div className={classes.elemPart2}>
+              <div>
+                <img
+                  src={shoesSmall}
+                  alt="shoesSmall"
+                  className={classes.shoesSmall}
+                />
+              </div>
+              <div className={classes.shoesInfoContainer}>
+                <div className={classes.shInCont1}>
+                  <img src={titleSimple} alt="titleSimple" />
+                </div>
+                <div className={classes.shInCont2}>
+                  <img src={sum120small} alt="sum120small" />
+                </div>
+                <div className={classes.shInCont3}>
+                  <img src={sum120} alt="sum120" />
+                </div>
+              </div>
+            </div>
+            <div className={classes.elemPart2}>
+              <div>
+                <img
+                  src={shoesSmall}
+                  alt="shoesSmall"
+                  className={classes.shoesSmall}
+                />
+              </div>
+              <div className={classes.shoesInfoContainer}>
+                <div className={classes.shInCont1}>
+                  <img src={titleSimple} alt="titleSimple" />
+                </div>
+                <div className={classes.shInCont2}>
+                  <img src={sum120small} alt="sum120small" />
+                </div>
+                <div className={classes.shInCont3}>
+                  <img src={sum120} alt="sum120" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.elem3}>
+            <div className={classes.tag1}>
+              <img src={tag} alt="tags" />
+            </div>
+            <hr />
+            <div className={classes.tag2}>
+              <img src={tags} alt="tags" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

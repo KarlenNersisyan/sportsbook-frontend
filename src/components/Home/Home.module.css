@@ -159,27 +159,46 @@ span:hover {
 
 .longline {
   padding-left: 204px;
-  width: 800px;
+  width: 658px;
 }
 
 .general {
   display: flex;
   padding: 0px 203px;
   justify-content: space-between;
-  height: 500px;
+  min-height: 1000px;
 }
 
 .listShoes {
   width: 70%;
+  min-height: 815px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.categories1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .infoShoes {
   width: 30%;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.elem2 {
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.elem3 {
+  height: 260px;
 }
 
 .product1 {
@@ -228,4 +247,68 @@ span:hover {
 
 .shortLine {
   width: 125px;
+}
+
+.longline1 {
+  width: 658px;
+}
+
+.latest {
+  width: 190px;
+}
+
+.partElem1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.partElem2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.categories {
+  width: 100px;
+}
+
+.plus {
+  width: 25px;
+  height: 25px;
+  background: grey;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.plus:hover {
+  background: green;
+}
+
+.minus {
+  width: 25px;
+  height: 25px;
+  background: grey;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.minus:hover {
+  background: red;
+}
+
+.banner {
+  padding-left: 5px;
+}
+
+.elemPart2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
 }
