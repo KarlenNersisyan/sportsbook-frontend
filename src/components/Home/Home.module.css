@@ -170,7 +170,7 @@ span:hover {
 }
 
 .listShoes {
-  width: 70%;
+  width: 67%;
   min-height: 815px;
   display: flex;
   flex-direction: column;
@@ -206,6 +206,13 @@ span:hover {
   height: 220px;
   flex-direction: column;
   justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.product1:hover {
+  transform: scale(1.09);
+  box-shadow: 3px 3px 10px black;
+  border-radius: 20px 0 20px 0;
 }
 
 .product2 {
@@ -214,6 +221,13 @@ span:hover {
   height: 187px;
   flex-direction: column;
   justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.product2:hover {
+  transform: scale(1.09);
+  box-shadow: 3px 3px 10px black;
+  border-radius: 20px 0 20px 0;
 }
 
 .product3 {
@@ -221,6 +235,13 @@ span:hover {
   height: 205px;
   flex-direction: column;
   justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.product3:hover {
+  transform: scale(1.09);
+  box-shadow: 3px 3px 10px black;
+  border-radius: 20px 0 20px 0;
 }
 
 .newStyle {
@@ -311,4 +332,11 @@ span:hover {
   display: flex;
   justify-content: space-evenly;
   padding-top: 30px;
+  cursor: pointer;
+}
+
+.elemPart2:hover {
+  transform: scale(1.09);
+  box-shadow: 3px 3px 10px black;
+  border-radius: 20px 0 20px 0;
 }
