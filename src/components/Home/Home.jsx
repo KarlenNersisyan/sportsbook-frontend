@@ -35,7 +35,7 @@ import List from "./List/List";
 
 function Home() {
   const [categories, setCategories] = useState([]);
-  const [list, setList] = useState(true);
+  const [list, setList] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -373,7 +373,15 @@ function Home() {
           </div>
         </div>
       </div>
-      {list && <List categories={categories} loading={loading} error={error} />}
+      {list && (
+        <List
+          categories={categories}
+          loading={loading}
+          error={error}
+          list={list}
+          handleOnClick={handleOnClick}
+        />
+      )}
     </div>
   );
 }

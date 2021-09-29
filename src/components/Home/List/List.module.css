@@ -1,9 +1,12 @@
 .list {
+  position: absolute;
   width: 90%;
-  margin: 5px auto;
+  /* margin: 5px auto; */
   min-height: 500px;
   border-radius: 5px;
   background: rgb(117, 105, 105);
+  top: 55px;
+  left: 5%;
 }
 
 .title {
@@ -67,4 +70,18 @@
   width: 270px;
   object-fit: cover;
   height: 200px;
+}
+
+.hide {
+  display: none;
+}
+
+.spanBlockList {
+  color: red !important;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.categoryStyle {
+  color: green;
 }
