@@ -53,6 +53,8 @@
 
 .infoCardItem {
   display: flex;
+  text-shadow: 1px 1px greenyellow;
+  color: crimson;
   min-height: 160px;
   font-style: oblique;
   justify-content: space-around;
