@@ -11,13 +11,16 @@ function Card({ handleCardClick, card, filteredItem, loading, error }) {
       })}
     >
       <div className={classes.cardList}>
-        <div
-          onClick={() => {
-            handleCardClick();
-          }}
-          className={classes.cardTitle}
-        >
-          <button className={classes.closeCard}> X </button>
+        <div className={classes.cardTitle}>
+          <button
+            onClick={() => {
+              handleCardClick();
+            }}
+            className={classes.closeCard}
+          >
+            {" "}
+            X{" "}
+          </button>
         </div>
         {loading && <Loading />}
         {error && <p>ERROR ...</p>}
