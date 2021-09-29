@@ -7,8 +7,11 @@ import { useState } from "react";
 
 function List({ error, loading, categories, list, handleOnClick }) {
   const [card, setCard] = useState(false);
+  const [filteredItem, setFilteredItem] = useState([]);
 
-  const handleCardClick = () => {
+  const handleCardClick = (id) => {
+    const category = categories.filter((item) => item.id === id);
+    setFilteredItem(category);
     setCard(!card);
   };
 
@@ -27,11 +30,10 @@ function List({ error, loading, categories, list, handleOnClick }) {
       <div className={classes.wrapperList}>
         {categories &&
           categories.map((e) => {
-            console.log(e);
             return (
               <div
-                onClick={handleCardClick}
-                key={Math.random()}
+                onClick={() => handleCardClick(e.id)}
+                key={e.id}
                 className={classes.listContainer}
               >
                 <div>
@@ -65,6 +67,7 @@ function List({ error, loading, categories, list, handleOnClick }) {
         <Card
           handleCardClick={handleCardClick}
           card={card}
+          filteredItem={filteredItem}
           error={error}
           loading={loading}
         />

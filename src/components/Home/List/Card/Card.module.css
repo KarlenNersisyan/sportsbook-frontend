@@ -41,12 +41,20 @@
 
 .wrapperCard {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 30px 0;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 160px;
+  padding: 50px 70px;
 }
 
 .hide {
   display: none;
+}
+
+.infoCardItem {
+  display: flex;
+  min-height: 160px;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 61px;
 }

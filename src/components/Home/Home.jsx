@@ -380,6 +380,8 @@ function Home() {
           error={error}
           list={list}
           handleOnClick={handleOnClick}
+          setLoading={setLoading}
+          setError={setError}
         />
       )}
     </div>
