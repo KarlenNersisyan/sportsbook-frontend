@@ -54,7 +54,9 @@
 .infoCardItem {
   display: flex;
   min-height: 160px;
+  font-style: oblique;
   justify-content: space-around;
   flex-direction: column;
   padding-top: 85px;
+  font-weight: lighter;
 }
