@@ -85,3 +85,25 @@
 .categoryStyle {
   color: green;
 }
+
+.alfa {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+}
+
+.infoPage {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.infoPage:hover {
+  color: green;
+  font-weight: 900;
+}
+
+.gamma {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}

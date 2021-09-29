@@ -42,7 +42,6 @@ function Home() {
   useEffect(() => {
     getProducts()
       .then((res) => {
-        console.log(res);
         setCategories(res);
         setLoading(false);
       })

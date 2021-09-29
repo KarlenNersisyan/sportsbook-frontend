@@ -4,7 +4,6 @@ import Loading from "../../../Loading/Loading";
 import classes from "./Card.module.css";
 
 function Card({ handleCardClick, card, filteredItem, loading, error }) {
-  console.log("RESULTS:::", filteredItem);
   return (
     <div
       className={cn([classes.cardListContainer], {

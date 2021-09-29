@@ -3,11 +3,46 @@ import cn from "classnames";
 
 import classes from "./List.module.css";
 import Card from "./Card/Card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getCategories, getTags } from "../../../services/service";
 
-function List({ error, loading, categories, list, handleOnClick }) {
+function List({
+  error,
+  loading,
+  categories,
+  list,
+  handleOnClick,
+  setError,
+  setLoading,
+}) {
   const [card, setCard] = useState(false);
   const [filteredItem, setFilteredItem] = useState([]);
+  const [women, setWomen] = useState([]);
+  const [tag, setTag] = useState([]);
+
+  useEffect(() => {
+    getCategories()
+      .then((res) => {
+        setWomen(res);
+        setLoading(false);
+      })
+      .catch((e) => {
+        setLoading(false);
+        setError(true);
+      });
+  }, []);
+
+  useEffect(() => {
+    getTags()
+      .then((res) => {
+        setTag(res);
+        setLoading(false);
+      })
+      .catch((e) => {
+        setLoading(false);
+        setError(true);
+      });
+  }, []);
 
   const handleCardClick = (id) => {
     const category = categories.filter((item) => item.id === id);
@@ -21,9 +56,35 @@ function List({ error, loading, categories, list, handleOnClick }) {
         [classes.hide]: !list,
       })}
     >
-      <div onClick={handleOnClick} className={classes.title}>
+      <div className={classes.title}>
         <h1> Shoes Shopping </h1>
-        <button className={classes.close}> X </button>
+        {loading && <p> Loading... </p>}
+        {error && <p> Error... </p>}
+        <div className={classes.alfa}>
+          {women &&
+            women.map((e) => {
+              return (
+                <div className={classes.infoPage} key={Math.random()}>
+                  <i>{e}</i>
+                </div>
+              );
+            })}
+        </div>
+        {loading && <p> Loading... </p>}
+        {error && <p> Error... </p>}
+        <div className={classes.gamma}>
+          {tag &&
+            tag.map((e) => {
+              return (
+                <div className={classes.infoPage} key={Math.random()}>
+                  <i>{e}</i>
+                </div>
+              );
+            })}
+        </div>
+        <button onClick={handleOnClick} className={classes.close}>
+          X
+        </button>
       </div>
       {loading && <Loading />}
       {error && <p>ERROR ...</p>}
