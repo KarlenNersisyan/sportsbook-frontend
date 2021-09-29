@@ -74,7 +74,7 @@ function Home() {
           target="_blank"
           rel="noreferrer"
         >
-          <span> Women's</span>
+          <span> Women's </span>
         </a>
         <a
           href="https://www.flipkart.com/mens-footwear/sports-shoes/pr?sid=osp,cil,1cu"

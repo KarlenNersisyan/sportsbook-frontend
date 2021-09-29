@@ -2,8 +2,16 @@ import Loading from "../../Loading/Loading";
 import cn from "classnames";
 
 import classes from "./List.module.css";
+import Card from "./Card/Card";
+import { useState } from "react";
 
 function List({ error, loading, categories, list, handleOnClick }) {
+  const [card, setCard] = useState(false);
+
+  const handleCardClick = () => {
+    setCard(!card);
+  };
+
   return (
     <div
       className={cn([classes.list], {
@@ -21,7 +29,11 @@ function List({ error, loading, categories, list, handleOnClick }) {
           categories.map((e) => {
             console.log(e);
             return (
-              <div key={Math.random()} className={classes.listContainer}>
+              <div
+                onClick={handleCardClick}
+                key={Math.random()}
+                className={classes.listContainer}
+              >
                 <div>
                   <h2 className={classes.categoryStyle}>{e.category}</h2>
                   <h3>{e.name}</h3>
@@ -49,6 +61,14 @@ function List({ error, loading, categories, list, handleOnClick }) {
             );
           })}
       </div>
+      {card && (
+        <Card
+          handleCardClick={handleCardClick}
+          card={card}
+          error={error}
+          loading={loading}
+        />
+      )}
     </div>
   );
 }
