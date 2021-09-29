@@ -50,6 +50,10 @@ function List({
     setCard(!card);
   };
 
+  const handleWomenClick = (e) => {
+    console.log(e.target);
+  };
+
   return (
     <div
       className={cn([classes.list], {
@@ -62,10 +66,10 @@ function List({
         {error && <p> Error... </p>}
         <div className={classes.alfa}>
           {women &&
-            women.map((e) => {
+            women.map((el) => {
               return (
                 <div className={classes.infoPage} key={Math.random()}>
-                  <i>{e}</i>
+                  <p onClick={handleWomenClick}>{el}</p>
                 </div>
               );
             })}
@@ -74,10 +78,10 @@ function List({
         {error && <p> Error... </p>}
         <div className={classes.gamma}>
           {tag &&
-            tag.map((e) => {
+            tag.map((elem) => {
               return (
                 <div className={classes.infoPage} key={Math.random()}>
-                  <i>{e}</i>
+                  <i>{elem}</i>
                 </div>
               );
             })}
