@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import List from "./List/List";
 
 // Import Images Start
 import { getProducts } from "../../services/service";
@@ -31,7 +32,6 @@ import tags from "../../assets/images/1-24.png";
 // Import Images End
 
 import classes from "./Home.module.css";
-import List from "./List/List";
 
 function Home() {
   const [categories, setCategories] = useState([]);
