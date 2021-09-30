@@ -18,8 +18,7 @@ function Card({ handleCardClick, card, filteredItem, loading, error }) {
             }}
             className={classes.closeCard}
           >
-            {" "}
-            X{" "}
+            X
           </button>
         </div>
         {loading && <Loading />}
